@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "twin.macro";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div tw="flex bg-gray-300 h-screen items-center justify-center">
+      <div tw="max-w-xs">
+        <label>
+          Example
+          <input
+            type="text"
+            tw="focus:ring-teal-500 focus:border-teal-500 block w-full sm:text-sm border-gray-300 rounded-md" />
+        </label>
+      </div>
     </div>
   );
 }
